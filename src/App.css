@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  height: 100%;
+  font-family: arial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display:flex;
+  flex-direction: row;
+  border: solid;
+  justify-content: space-evenly;
+  height:100%;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.column{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  flex-basis: 49%;
+  min-height:98vh;
+  min-width: 50vh;
+  border:solid;
+  border:solid;
+  border-color: yellow;
+}
+
+.title{
+  display:flex;
+  flex-direction: column;
+  height: 7%;
+  width: 99%;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border:solid;
+  border-color: blue;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.employeelist{
+  height: 13%;
+  border:solid;
+  border-color: red;
+  display:flex;
+  font-size: 20px;
+  display:flex;
+  flex-direction: row;
+}
+
+.employeelistcolumn{
+  display:flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.employeeimagecolumn{
+  display:flex;
+  flex-direction: column;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .employeeimagecolumn {
+    margin-left: 4%;
   }
 }
+
+.profilepiccolumn{
+  display:flex;
+  flex-direction: column;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+.profiledivcolumn{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 26px;
+  flex-basis: 50%;
+  padding-left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .profiledivcolumn {
+    font-size: 22px;
+  }
+}
+
+.nextcolumn{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  padding-right: 4%;
+}
+
+.profiledivs{
+  height: 15%;
+  border:solid;
+  border-color: gray;
+  margin-left: 3%;
+  margin-right: 3%;
+  display:flex;
+  flex-direction:row;
+}
+
+.employeeimage{
+  width:90px;
+  height:90px;
+}
+
+@media only screen and (max-width: 600px) {
+  .employeeimage {
+    width:80px;
+    height:80px;
+  }
+}
+
+.nextimage{
+  height:50px;
+  width:50px;
+
+}
+
+.profileimage{
+  width:130px;
+  height:130px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profileimage {
+    width:100px;
+    height:100px;
+  }
+}
+
+#searchbar{
+  height: 7%;
+  border:solid;
+  border-color: green;
+  padding-left: 2%;
+  font-size: 36px;
+}
+
+#profilepic{
+  height: 18%;
+  border:solid;
+  border-color: gray;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display:flex;
+  flex-direction: row;
+  font-size:36px;
+}
+
+@media only screen and (max-width: 600px) {
+  #profilepic {
+    font-size:28px;
+  }
+}
+
+
+
+
